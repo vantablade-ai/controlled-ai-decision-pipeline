@@ -8,6 +8,11 @@ from app.services.reasoning import ReasoningService
 
 
 @pytest.fixture
+def anyio_backend():
+    return "asyncio"
+
+
+@pytest.fixture
 def evidence():
     return {
         "subject": "Repeated manual reconciliation",

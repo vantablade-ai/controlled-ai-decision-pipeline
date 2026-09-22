@@ -1,6 +1,6 @@
 # Controlled AI Decision Pipeline
 
-![CI](https://github.com/OWNER/controlled-ai-decision-pipeline/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/vantablade-ai/controlled-ai-decision-pipeline/actions/workflows/ci.yml/badge.svg)
 
 A small applied-AI engineering demonstration: model reasoning is constrained by typed evidence, deterministic observations, strict schemas, explicit limitations, provenance, and a separate authority policy.
 
@@ -41,7 +41,7 @@ flowchart LR
 ## 60-second demo
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/vantablade-ai/controlled-ai-decision-pipeline.git
 cd controlled-ai-decision-pipeline
 make install
 make demo
@@ -63,7 +63,7 @@ Confidence describes the provider's certainty about its reasoning. Evidence qual
 
 ## Provenance and provider interface
 
-Normalized evidence and deterministic observations are canonicalized and hashed with SHA-256. SQLite retains the snapshot, observations, validated provider output, final decision, and approval data. `MockProvider` is the default. An optional OpenAI adapter can be enabled with `PROVIDER=openai` and `OPENAI_API_KEY`; install `openai` separately. It requests JSON Schema output and still validates locally.
+Normalized evidence and deterministic observations are canonicalized and hashed with SHA-256. SQLite retains the snapshot, observations, validated provider output, final decision, and approval data. `MockProvider` is the default. An optional OpenAI adapter can be enabled with `PROVIDER=openai` and `OPENAI_API_KEY`; install its dependency with `pip install -r requirements-openai.txt`. It requests JSON Schema output and still validates locally.
 
 ## Offline mode and API
 
