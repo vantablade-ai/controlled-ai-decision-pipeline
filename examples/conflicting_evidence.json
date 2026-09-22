@@ -1,0 +1,1 @@
+{"subject":"Conflicting workflow metrics","metrics":[{"name":"failure_rate","value":0.4,"unit":"percent","source_id":"dashboard-a"}],"known_failures":["reported failure spike"],"evidence_sources":["dashboard-a"]}

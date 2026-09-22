@@ -1,0 +1,12 @@
+[project]
+name = "controlled-ai-decision-pipeline"
+version = "1.0.0"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

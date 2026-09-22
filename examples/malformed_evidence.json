@@ -1,0 +1,1 @@
+{"subject":"Invalid count","observed_events":[{"event_id":"evt-x","kind":"retry","count":-1,"source_id":"log-x"}]}
