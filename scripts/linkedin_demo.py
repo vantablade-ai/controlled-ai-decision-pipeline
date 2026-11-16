@@ -19,17 +19,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from app.models import (  # noqa: E402
+from app.models import (
     Actionability,
     ApprovalStatus,
     AuthorityMode,
     DecisionStatus,
-    EvidenceRequest,
     EvidenceQuality,
+    EvidenceRequest,
 )
-from app.providers.mock import MockProvider, MockScenario  # noqa: E402
-from app.repositories.audit import AuditRepository  # noqa: E402
-from app.services.reasoning import ReasoningService  # noqa: E402
+from app.providers.mock import MockProvider, MockScenario
+from app.repositories.audit import AuditRepository
+from app.services.reasoning import ReasoningService
 
 WIDTH = 68
 
